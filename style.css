@@ -1,0 +1,53 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:url("./Images/bg.jpg");
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.world{
+    position: relative;
+}
+
+.space-ship-and-bullet{
+    width: 10%;
+    height: 40%;
+    position: absolute;
+    left:45%;
+    bottom: 0;
+}
+
+.space-ship{
+   width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.bullet{
+    position: absolute;
+    left: 35%;
+    bottom: 60%;
+    width: 30%;
+    height: 2rem;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.target{
+    width: 1.2rem;
+    height: 1.2rem;
+    position: absolute;
+    left: 10%;
+    top: 0; /* 150 */
+    border-radius: 50%;
+    background-color: rgb(228, 41, 228);
+    box-shadow: 0px 0px 4px rgb(131, 0, 253);
+}
